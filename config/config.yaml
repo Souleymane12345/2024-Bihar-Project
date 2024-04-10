@@ -1,0 +1,10 @@
+paths:
+  current_path: data/
+  model_path: data/model/
+  db_path: data/db/
+  logs: logger/logs.log
+  predict: data/predict/
+
+ml:
+  db : data/db/meteo.db
+  db_api: data/db/predmeteo.db

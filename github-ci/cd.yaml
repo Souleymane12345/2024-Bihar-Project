@@ -1,0 +1,41 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build Docker image
+        run: docker build -t openmeteo -f Dockerfile.txt .
+
+      - name: Test with pytest
+        run: docker run --rm openmeteo pytest test/
+
+      - name: Push Docker image
+        run: |
+          docker tag openmeteo ${{ secrets.DOCKER_USERNAME }}/openmeteo:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/openmeteo:latest
+
+      - name: Deploy to Docker container
+        run: |
+          docker run -d --name openmeteorun -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/openmeteo:latest

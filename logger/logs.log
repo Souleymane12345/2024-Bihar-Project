@@ -1,0 +1,24 @@
+2024-04-09 23:12:16.068 | INFO | main:predict:50 - Predictions requested for the dates 2024-04-10 00:00:00 to 2024-04-11 00:00:00
+2024-04-09 23:12:16.068 | INFO | main:predict:50 - Predictions requested for the dates 2024-04-10 00:00:00 to 2024-04-11 00:00:00
+2024-04-09 23:12:16.597 | INFO | main:predict:71 - Predictions successfully made
+2024-04-09 23:12:16.597 | INFO | main:predict:71 - Predictions successfully made
+2024-04-10 02:00:08.838 | INFO | main:fetch_predictions:89 - Beginning prediction retrieval from the database
+2024-04-10 02:00:08.838 | INFO | main:fetch_predictions:89 - Beginning prediction retrieval from the database
+2024-04-10 02:00:08.854 | INFO | main:fetch_predictions:107 - Predictions successfully retrieved from the database
+2024-04-10 02:00:08.854 | INFO | main:fetch_predictions:107 - Predictions successfully retrieved from the database
+2024-04-10 04:13:10.106 | INFO | main:fetch_predictions:91 - Beginning prediction retrieval from the database
+2024-04-10 04:13:10.106 | INFO | main:fetch_predictions:91 - Beginning prediction retrieval from the database
+2024-04-10 04:13:10.119 | INFO | main:fetch_predictions:109 - Predictions successfully retrieved from the database
+2024-04-10 04:13:10.119 | INFO | main:fetch_predictions:109 - Predictions successfully retrieved from the database
+2024-04-10 04:15:32.791 | INFO | main:fetch_predictions:91 - Beginning prediction retrieval from the database
+2024-04-10 04:15:32.791 | INFO | main:fetch_predictions:91 - Beginning prediction retrieval from the database
+2024-04-10 04:15:32.796 | INFO | main:fetch_predictions:109 - Predictions successfully retrieved from the database
+2024-04-10 04:15:32.796 | INFO | main:fetch_predictions:109 - Predictions successfully retrieved from the database
+2024-04-10 04:17:54.198 | INFO | main:fetch_predictions:91 - Beginning prediction retrieval from the database
+2024-04-10 04:17:54.198 | INFO | main:fetch_predictions:91 - Beginning prediction retrieval from the database
+2024-04-10 04:17:54.209 | INFO | main:fetch_predictions:109 - Predictions successfully retrieved from the database
+2024-04-10 04:17:54.209 | INFO | main:fetch_predictions:109 - Predictions successfully retrieved from the database
+2024-04-10 04:25:56.149 | INFO | main:fetch_combined_predictions:137 - Beginning prediction retrieval
+2024-04-10 04:25:56.149 | INFO | main:fetch_combined_predictions:137 - Beginning prediction retrieval
+2024-04-10 04:25:56.156 | INFO | main:fetch_combined_predictions:145 - Predictions successfully retrieved
+2024-04-10 04:25:56.156 | INFO | main:fetch_combined_predictions:145 - Predictions successfully retrieved
